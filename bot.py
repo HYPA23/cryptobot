@@ -37,7 +37,7 @@ WARMUP_SAMPLES_FACTOR = 1.0
 CONFIRMATION_SAMPLES = 3
 
 # --- New: filters & risk ---
-NOISE_BAND_BPS = 16          # require price to be > slowEMA by this many bps for BUY; below for SELL (0.15%)
+NOISE_BAND_BPS = 15          # require price to be > slowEMA by this many bps for BUY; below for SELL (0.15%)
 REQUIRE_TREND_SLOPE = True   # BUY only if slowEMA rising vs last tick; SELL only if falling
 TP_PCT = 0.01               # 0.7% take-profit
 SL_PCT = 0.01               # 1% stop-loss
@@ -347,6 +347,7 @@ while True:
     except Exception as e:
         print("Loop error:", e)
         time.sleep(3)
+
 
 
 
