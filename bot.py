@@ -20,6 +20,8 @@ TOKENS = {
     "HZ1JovNiVvGrGNiiYvEozEVgZ58xaU3RKwX8eACQBCt3": {"label": "PYTH", "group": "majors"},
     # high volatility
     "EKpQGSJtjMFqKZ9KQanSqYXRcF8fBopzLHYxdM65zcjm": {"label": "WIF",  "group": "high_vol"},
+    "4k3Dyjzvzp8eMZWUXbBCjEvwSkkkPgkXyJzJ6kJ6KCQJ": {"label": "RAY", "group": "majors"},
+
 }
 
 # Group configs (day-trade bias)
@@ -345,6 +347,7 @@ while True:
     except Exception as e:
         print("Loop error:", e)
         time.sleep(3)
+
 
 
 
